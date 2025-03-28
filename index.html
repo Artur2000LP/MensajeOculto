@@ -164,7 +164,7 @@
     const image = document.getElementById('imagenClick');
     image.addEventListener('click', (e) => {
       e.stopPropagation();
-      const numWaves = 3;
+      const numWaves = 5;
       const waveDelay = 200; // milisegundos entre cada ola
       for (let j = 0; j < numWaves; j++) {
         setTimeout(() => createCircularWave(e), j * waveDelay);
